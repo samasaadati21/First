@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Menu</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .menu{
+            height: 800px;
+            width: 10%;
+            background-color: rgb(79, 66, 91);
+            display: flex;
+            flex-wrap: wrap;
+            >ul{
+                width: 50%%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: brown;
+                >li{
+                    list-style-type: none;
+                    /*border: 1px solid greenyellow;*/
+                    flex-grow: 1;
+                    position: relative;
+                    >a{
+                        /*background-color: blue;*/
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 30px;
+                        text-transform: capitalize;
+                        color: wheat;
+                        &:hover{
+                            background-color: rgba(67, 60, 60, 0.751);
+                        }
+                    }
+                    &:hover>ul{
+                        height: 160px;
+                    }
+                        >ul{
+                            position: absolute;
+                            left: 0;top: 70px;
+                            width: 100%;
+                            height: 0;
+                            overflow: hidden;
+                            transition: 1s;
+                            background-color: rgba(50, 46, 46, 0.745);
+                            margin-left: 180px;
+                            margin-top: -70px;
+                            >li{
+                                width: 100%;
+                                list-style-type: none;
+                                height: 40px;
+                                border-bottom: 2px solid rgb(242, 232, 232);
+                                >a{
+                                    /*background-color: brown;*/
+                                    display: flex;
+                                    width: 100%;
+                                    height: 100%;
+                                    align-items: center;
+                                    padding: 20px;
+                                    color: white;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    text-decoration: none;
+                                    &:hover{
+                                        background-color: rgb(144, 137, 137);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <Li>
+                <a href>Dashboard</a>
+                <ul>
+                    <li>
+                        <a href>Features</a>
+                    </li>
+                    <li>
+                        <a href>Elements</a>
+                    </li>
+                    <li>
+                        <a href>Icons</a>
+                    </li>
+                    <li>
+                        <a href>Sliders</a>
+                    </li>
+                </ul>
+            </Li>
+            <Li>
+                <a href>People</a>
+            </Li>
+            <Li>
+                <a href>Website</a>
+                <ul>
+                    <li>
+                        <a href>create Blog</a>
+                    </li>
+                    <li>
+                        <a href>Manage Web</a>
+                    </li>
+                    <li>
+                        <a href>Manage Files</a>
+                    </li>
+                </ul>
+            </Li>
+            <Li>
+                <a href>Schedule</a>
+                <ul>
+                    <li>
+                        <a href>Fitness</a>
+                    </li>
+                    <li>
+                        <a href>Nutrition</a>
+                    </li>
+                </ul>
+            </Li>
+            <Li>
+                <a href>Marketing</a>
+            </Li>
+            <Li>
+                <a href>Communicate</a>
+            </Li>
+            <Li>
+                <a href>Membership</a>
+            </Li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

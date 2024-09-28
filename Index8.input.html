@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .box{
+            width: 50%;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: plum;
+            margin: 100px auto;
+            >input{
+                width: 100%;
+                height: 40px;
+                color: rgb(79, 71, 71);
+                font-size: 30px;
+                caret-color: aqua;
+                &::placeholder{
+                    color: rgb(142, 122, 122);
+                }
+                &:last-of-type{
+                    &:in-range{
+                        color: green;
+                    }
+                    &:out-of-range{
+                        color: red;
+                    }
+                }
+                &:focus{
+                    background-color: burlywood;
+                }
+                &:invalid{
+                    background-color: red;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <input type="name" placeholder="text..."
+        spellcheck="false">
+        <input type="text" placeholder="text..."
+        spellcheck="false">
+        <input type="email" placeholder="text..."
+        spellcheck="false">
+        <input type="text" placeholder="text..."
+        spellcheck="false">
+        <input type="number"  min="30" max="100" placeholder="text..."
+        spellcheck="false">
+    </div>
+    
+</body>
+</html>
